@@ -96,17 +96,49 @@ main{
 .icon-view-2:hover .fa-maximize{
     cursor: pointer;
 }
-.left-menu:hover .box-left{
+.speaker-view:hover{
+    text-decoration-line: underline;
+}
+.gallery-view:hover{
+    text-decoration-line: underline;
+}
+.icon-view:hover .grid-icon{
     cursor: pointer;
 }
-.left-menu:active .box-left-1{
+/*----------Left-menu-Hover---------*/
+/*----------Box-1---------*/
+.left-menu:hover .box-1{
+    cursor: pointer;
+}
+.left-menu .box-1:active .box-left-1{
     display: none;
 }
-.box-left-hov{
+.box-left-hov-box-1{
     display: none;
 }
-.left-menu:active .box-left-hov{
+.left-menu .box-1:active .box-left-hov-box-1{
     display: inline-block;
+}
+/*----------Box-2---------*/
+.left-menu:hover .box-2{
+    cursor: pointer;
+}
+.left-menu .box-2:active .box-left-1{
+    display: none;
+}
+.box-left-hov-box-2{
+    display: none;
+}
+.left-menu .box-2:active .box-left-hov-box-2{
+    display: inline-block;
+}
+/*----------Center-menu-Hover---------*/
+.center-menu:hover .box-center{
+    cursor: pointer;
+}
+/*----------Right-menu-Hover---------*/
+.right-menu:hover span{
+    cursor: pointer;
 }
 /*----------Utility---------*/
 .capital{
@@ -133,6 +165,15 @@ main{
 .fw-b{
     font-weight: bold
 }
+.c-g{
+    color: rgb(35, 226, 35);
+}
+.c-r{
+    color: red;
+}
+.bg-gray{
+    background-color: gray;
+}
 /*----------Footer---------*/
 footer{
     height: 10vh;
@@ -149,17 +190,24 @@ footer{
     flex-basis: 10%;
 }
 .center-menu{
-    background-color: blue;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    flex-basis: 45%;
 }
 .right-menu{
-    background-color: yellow;
+    display: flex;
+    align-items: center;
+    flex-basis: 8%;
+    justify-content: space-around;
 }
 .col-1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    flex-grow: 1;
 }
 .col-2{
     display: flex;
