@@ -8,16 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Zoom</title>
 </head>
-<body>
+<body class="nunito">
     <!----------Main---------->
     <main>
         <div class="icon-view">
-            <div></div>
-            <div></div>
+            <!-- <i class="fa-solid fa-table-cells"></i> --> <!--icona free ma diversa dal mockup-->
+            <div class="grid-icon">
+                &#x25a0;&#x25a0;&#x25a0;<br />
+                &#x25a0;&#x25a0;&#x25a0;<br />
+                &#x25a0;&#x25a0;&#x25a0;
+            </div>
+            <span class="text-view capital">speaker view</span>
+            <div id="drop-down-menu">
+                <div class="speaker-view capital">Speaker view</div>
+                <div class="gallery-view capital">Gallery view</div>
+            </div>
+            </div>
+        <div class="icon-view-2">
+            <i class="fa-solid fa-maximize"></i>
         </div>
         <div class="container">
-            <div class="box-item"></div>
-            <div class="box-item"></div>
+            <div class="box-item">
+               <img src="./asset/img/schreenshot-classe#58-1.png" alt="">
+            </div>
+            <div class="box-item">
+                <img src="./asset/img/schreenshot-classe#58-2.png" alt="">
+            </div>
             <div class="box-item"></div>
             <div class="box-item"></div>
             <div class="box-item"></div>
@@ -56,8 +72,34 @@
     <!----------Footer---------->
     <footer>
         <div class="left-menu">
-            <div class="box-left box-1-left">1</div>
-            <div class="box-left box-2-left">2</div>
+            <div class="col-1">
+                <div class="box-left box-left-1">
+                    <i class="fa-solid fa-microphone em-1-5 c-w m-b-50"></i>
+                </div>
+                <div class="box-left-hov">
+                    <i class="fa-solid fa-microphone-slash em-1-5 c-w m-b-30"></i>
+                </div>
+                <span class="box-left capital em-0-8 c-w">mute</span>
+            </div>
+            <div class="col-2">
+                <div class="box-left">
+                    <i class="fa-solid fa-chevron-up fw-b c-w em-0-5"></i>
+                </div>
+            </div>
+            <div class="col-1">
+                <div class="box-left box-left-1">
+                    <i class="fa-solid fa-video em-1-5 c-w m-b-50"></i>
+                </div>
+                <div class="box-left-hov">
+                    <i class="fa-solid fa-video-slash em-1-5 c-w m-b-30"></i>
+                </div>
+                <span class="box-left capital em-0-8 c-w">stop video</span>
+            </div>
+            <div class="col-2">
+                <div class="box-left">
+                    <i class="fa-solid fa-chevron-up fw-b c-w em-0-5"></i>
+                </div>
+            </div>
         </div>
         <div class="center-menu">
             <div class="box-center box-1-center">1</div>

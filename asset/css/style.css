@@ -3,12 +3,18 @@
     padding: 0%;
     box-sizing: border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+.nunito{
+    font-family: 'Nunito', sans-serif;
+}
+/*----------Main---------*/
 main{
     height: 90vh;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .container{
     background-color: black;
@@ -19,15 +25,113 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: auto;
+}
+.icon-view{
+    position: absolute;
+    top: 1%;
+    right: 0.3%;
+    display: flex;
+    width: 7%;
+    background-color: gray;
+    padding: 0.2%;
+    border-radius: 5px;
+    margin-right: 1.5%;
+}
+.icon-view-2{
+    margin-left: 3%;
+    position: absolute;
+    top: 1%;
+    right: 0.3%;
+    display: flex;
+    background-color: gray;
+    padding: 0.2%;
+    border-radius: 5px;
+}
+.text-view, 
+.speaker-view,
+.gallery-view{
+    font-size: 0.8em;
+    color: white;
 }
 .box-item{
     flex-basis: 13.8%;
-    background-color: red;
+    border: 1px solid yellow;
     margin-left: 0.2%;
     margin-bottom: 0.4%;
 }
-.col-1{
-    
+.box-item img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.fa-table-cells{
+    color: white;
+}
+.grid-icon{
+    font-size: 4pt;
+    letter-spacing: 2px;
+    line-height: 75%;
+    color: white;
+    margin-right: 2%;
+}
+#drop-down-menu{
+    display: none;
+    color: white;
+}
+.fa-maximize{
+    color: white;
+    font-size: 0.8em;
+}
+/*----------Hover---------*/
+.icon-view:hover .text-view{
+    display: none;
+}
+.icon-view:hover #drop-down-menu{
+    display: inline-block;
+    background-color: gray;
+    padding: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icon-view-2:hover .fa-maximize{
+    cursor: pointer;
+}
+.left-menu:hover .box-left{
+    cursor: pointer;
+}
+.left-menu:active .box-left-1{
+    display: none;
+}
+.box-left-hov{
+    display: none;
+}
+.left-menu:active .box-left-hov{
+    display: inline-block;
+}
+/*----------Utility---------*/
+.capital{
+    text-transform: capitalize;
+}
+.c-w{
+    color: white;
+}
+.em-1-5{
+    font-size: 1.5em;
+}
+.em-0-8{
+    font-size: 0.8em;
+}
+.em-0-5{
+    font-size: 0.5em;
+}
+.m-b-50{
+    margin-bottom: 50%;
+}
+.m-b-30{
+    margin-bottom: 30%;
+}
+.fw-b{
+    font-weight: bold
 }
 /*----------Footer---------*/
 footer{
@@ -38,8 +142,11 @@ footer{
 }
 /*----------Menu---------*/
 .left-menu{
-    background-color: cyan;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1%;
+    flex-basis: 10%;
 }
 .center-menu{
     background-color: blue;
@@ -47,4 +154,16 @@ footer{
 }
 .right-menu{
     background-color: yellow;
+}
+.col-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.col-2{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
 }
