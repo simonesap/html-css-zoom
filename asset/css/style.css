@@ -32,7 +32,7 @@ main{
     top: 1%;
     right: 0.3%;
     display: flex;
-    width: 7%;
+    width: 8%;
     background-color: gray;
     padding: 0.2%;
     border-radius: 5px;
@@ -77,6 +77,8 @@ main{
     flex-basis: 13.8%;
     margin-left: 0.2%;
     margin-bottom: 0.8%;
+    display: flex;
+    align-items: flex-end;
 }
 .item-1{
     background-image: url('../img/1.png');
@@ -274,6 +276,9 @@ main{
 .em-0-8{
     font-size: 0.8em;
 }
+.em-0-6{
+    font-size: 0.6em;
+}
 .em-0-5{
     font-size: 0.5em;
 }
@@ -294,6 +299,15 @@ main{
 }
 .bg-gray{
     background-color: gray;
+}
+.bg-gray-2{
+    background-color: rgba(128, 128, 128, 0.897);
+}
+.p-1-5{
+    padding: 1.5%;
+}
+.w-40{
+    width: 41%;
 }
 /*----------Footer---------*/
 footer{
